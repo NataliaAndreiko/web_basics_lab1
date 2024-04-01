@@ -4,19 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Андрейко Наталія</title>
     <link rel="stylesheet" href="styles/css/style.css">
 </head>
 <body>
 <header class="header">
     <div class="wrapper">
         <h1>CASE STUDY</h1>
+
+        <nav class="menu">
+            <input id="menu__checkbox" type="checkbox"/>
+            <label class="menu__btn" for="menu__checkbox">
+                <span></span>
+            </label>
+
+            <ul class="menu-wrapper">
+                <li><a class="menu__item" href="#Platform">AI Fashion Platform</a></li>
+                <li><a class="menu__item" href="#Project">Project Overview</a></li>
+                <li><a class="menu__item" href="#User">User Research and Personas</a></li>
+                <li><a class="menu__item" href="#Persona">User Persona: Nataliia Andreiko</a></li>
+                <li><a class="menu__item" href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
 
-<section class="first-scren">
+<section class="first-scren" id="Platform">
     <div class="wrapper">
-        <h2>AI Fashion Platform</h2>
+        <h2><b>AI Fashion Platform</b></h2>
 
         <div class="first-scren__content">
             <picture>
@@ -41,7 +56,7 @@
 </section>
 
 
-<section class="substance-section">
+<section class="substance-section" id="Project">
     <div class="wrapper">
         <h2>User Research and Personas</h2>
 
@@ -61,7 +76,7 @@
     </div>
 </section>
 
-<section class="table-section">
+<section class="table-section" id="User">
     <div class="wrapper">
 
         <h2>User Persona: Nataliia Andreiko</h2>
@@ -114,8 +129,8 @@
     </div>
 </section>
 
-<section class="lists-section">
-    <dic class="wrapper">
+<section class="lists-section" id="Persona">
+    <div class="wrapper">
         <ul>
             <li>About Us</li>
             <li>Services</li>
@@ -138,40 +153,40 @@
             <dt>Contact Us</dt>
             <dd>Get in touch with us to inquire about our services or ask any questions you may have.</dd>
         </dl>
-    </dic>
+    </div>
 </section>
 
 <section class="sign-in">
-    <div class="wrapper">
-        <form>
+        <form class="wrapper">
+            <div>
             <label for="text">Text Input:</label><br>
             <input type="text" id="text" name="text"><br><br>
-          </form>
+          </div>
           
-          <form>
+          <div>
             <label for="select">Select Box:</label><br>
             <select id="select" name="select">
               <option value="option1">Option 1</option>
               <option value="option2">Option 2</option>
               <option value="option3">Option 3</option>
             </select><br><br>
-          </form>
+          </div>
           
-          <form>
+          <div>
             <label for="multiSelect">Multiple Select Box:</label><br>
             <select id="multiSelect" name="multiSelect" multiple>
               <option value="option1">Option 1</option>
               <option value="option2">Option 2</option>
               <option value="option3">Option 3</option>
             </select><br><br>
-          </form>
+          </div>
           
-          <form>
+          <div>
             <label for="password">Password:</label><br>
             <input type="password" id="password" name="password"><br><br>
-          </form>
+          </div>
           
-          <form>
+          <div>
             <label>Radio Buttons:</label><br>
             <input type="radio" id="radio1" name="radio" value="option1">
             <label for="radio1">Option 1</label><br>
@@ -179,9 +194,9 @@
             <label for="radio2">Option 2</label><br>
             <input type="radio" id="radio3" name="radio" value="option3">
             <label for="radio3">Option 3</label><br><br>
-          </form>
+          </div>
           
-          <form>
+          <div>
             <label>Checkboxes:</label><br>
             <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">
             <label for="checkbox1">Option 1</label><br>
@@ -189,18 +204,15 @@
             <label for="checkbox2">Option 2</label><br>
             <input type="checkbox" id="checkbox3" name="checkbox3" value="option3">
             <label for="checkbox3">Option 3</label><br><br>
-          </form>
-          
-          <form>
+
             <label for="date">Date Input:</label><br>
             <input type="date" id="date" name="date"><br><br>
-          </form>
-    </div>
-
+          </div>
+        </form>
 </section>
 
 
-<footer class="footer">
+<footer class="footer" id="Contact">
     <div class="wrapper">
         <div class="footer__container">
             <div class="footer__contacts">

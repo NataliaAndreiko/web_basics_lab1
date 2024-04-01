@@ -1,4 +1,5 @@
-@import "../../reset.css";
+@import "../reset.css";
+@import "../menu.css";
 @import "../../assets/fonts/Lato.css";
 @import "../../assets/fonts/RedHatDisplay.css";
 * {
@@ -163,14 +164,60 @@ p, td, th, li, dt, dd {
   }
 }
 
+.lists-section {
+  margin: 70px 0;
+}
+.lists-section .wrapper {
+  gap: 40px;
+  align-items: start;
+}
 .lists-section ul {
-  padding: 0;
+  padding-left: 20px;
 }
 .lists-section ol {
   padding-left: 20px;
 }
 .lists-section li {
   margin-bottom: 5px;
+}
+@media screen and (min-width: 769px) {
+  .lists-section .wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.sign-in {
+  margin: 70px 0;
+}
+.sign-in .wrapper {
+  gap: 10px;
+  align-items: start;
+}
+.sign-in div {
+  width: 100%;
+}
+.sign-in input[type=text], .sign-in input[type=password], .sign-in select, .sign-in input[type=date] {
+  border: 0;
+  background-color: #cbcbcb;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
+  .sign-in .wrapper {
+    width: 80%;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    padding: 2%;
+    border-radius: 1%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sign-in .wrapper {
+    width: 60%;
+  }
 }
 
 .footer .wrapper {

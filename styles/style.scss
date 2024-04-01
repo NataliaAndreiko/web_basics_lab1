@@ -1,12 +1,10 @@
-@import "../../reset.css";
+@import "../reset.css";
+@import "../menu.css";
+
 @import "../../assets/fonts/Lato.css";
 @import "../../assets/fonts/RedHatDisplay.css";
 
-// @mixin font-settings($fontSize, $sontWight, $letterSpacing) {
-//     font-weight: $fontSize;
-//     font-size: $sontWight;
-//     letter-spacing: $letterSpacing;
-// }
+
 
 * {
     transition: all 0.1s ease-in;
@@ -186,6 +184,7 @@ p, td, th, li, dt, dd{
 
 
     @media screen and (min-width: 769px){
+        
         h2{
             font-size: 28px;
         }
@@ -201,8 +200,14 @@ p, td, th, li, dt, dd{
 
 
 .lists-section {
+    margin: 70px 0;
+
+    .wrapper {
+        gap: 40px;
+        align-items: start;
+    }
     ul {
-        padding: 0;
+        padding-left: 20px;
     }
     
     ol {
@@ -212,8 +217,51 @@ p, td, th, li, dt, dd{
     li {
         margin-bottom: 5px;
     }
+
+    @media screen and (min-width: 769px){
+        .wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
 }
 
+
+.sign-in {
+    margin: 70px 0;
+
+    .wrapper {
+        gap: 10px;
+        align-items: start;
+    }
+    div{
+        width: 100%
+    }
+    input[type=text],  input[type=password], select, input[type=date]{
+        border: 0;
+        background-color: #cbcbcb;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 769px){
+        .wrapper {
+            width: 80%;
+            background-color: #f0f0f0;
+            box-sizing: border-box;
+            padding: 2%;
+            border-radius: 1%;
+        }
+    }
+    @media screen and (min-width: 1200px){
+        .wrapper {
+            width: 60%;
+        }
+    }
+}
 
 .footer {
 
